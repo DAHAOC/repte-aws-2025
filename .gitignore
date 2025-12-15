@@ -8,14 +8,7 @@
 *.tfstate.*
 .terraform.lock.hcl
 infra/handler.zip
-# ----------------------------------------------------
-# 2. ARXIUS DE HUGO (BUILD I TEMPORALS)
-# ----------------------------------------------------
-# La carpeta de publicació final generada (el frontend)
-/frontend/
-/public/
-/resources/
-.hugo_build.lock
+
 
 # ----------------------------------------------------
 # 3. ALTRES
