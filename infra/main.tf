@@ -58,7 +58,7 @@ resource "aws_lambda_function" "visits_counter" {
     filename = data.archive_file.lambda_zip.output_path
     function_name = "CloudResumeCounter"
     role = data.aws_iam_role.lab_role.arn # Rol de Lab
-    handler = "handler.lambda.handler"
+    handler = "handler.lambda_handler"
     runtime = "python3.10"
     source_code_hash = data.archive_file.lambda_zip.output_md5
     timeout = 10 # SEGONS
